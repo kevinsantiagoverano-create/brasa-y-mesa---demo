@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BRASA & MESA — Fuego, sabor y buenos momentos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav><div class="wrap">
+<a class="logo" href="#inicio">BRASA <b>&</b> MESA</a>
+<ul><li><a href="#destacados">Destacados</a></li><li><a href="#menu">Menú</a></li><li><a href="#experiencia">Experiencia</a></li><li><a href="#voces">Opiniones</a></li><li><a href="#promos">Promociones</a></li></ul>
+<div style="display:flex;gap:8px"><button class="btn dk" id="open" style="padding:10px 16px">Pedido <span id="cnt">0</span></button><a class="btn" href="#reservas">Reservar</a></div>
+</div></nav>
+
+<header class="hero" id="inicio"><div class="wrap two">
+<div><h1>Sabores que se quedan en tu <span class="grad">memoria.</span></h1>
+<p>Carnes a la brasa, hamburguesas gourmet y cortes premium. Fuego real, producto fresco y una mesa pensada para quedarse un rato más.</p>
+<div class="cta"><a class="btn" href="#reservas">Reservar mesa</a><a class="btn dk" href="#menu">Ver el menú</a></div></div>
+<div class="ph" style="--f:#8a3b26" role="img" aria-label="Lomo a la brasa servido en plato"></div>
+</div></header>
+
+<section id="destacados"><div class="wrap">
+<div class="head"><div><div class="lab">LA SELECCIÓN</div><h2>Platos destacados</h2></div><a href="#menu">Ver menú completo →</a></div>
+<div class="cards">
+<article class="card"><div class="ph" style="--f:#7a2f22"><div class="ov"><div><small>★ 4,9</small><span class="pr">$68.000</span></div><button class="plus" data-n="Lomo Brasa" data-p="68000" aria-label="Agregar Lomo Brasa">+</button></div></div><h3>Lomo Brasa</h3><p>Lomo fino de 300 g, mantequilla de hierbas y papas rústicas.</p></article>
+<article class="card"><div class="ph" style="--f:#a8602f"><div class="ov"><div><small>★ 5,0</small><span class="pr">$38.000</span></div><button class="plus" data-n="Hamburguesa Mesa" data-p="38000" aria-label="Agregar Hamburguesa Mesa">+</button></div></div><h3>Hamburguesa Mesa</h3><p>Doble carne madurada, cheddar, cebolla caramelizada y pan brioche.</p></article>
+<article class="card"><div class="ph" style="--f:#5b2a22"><div class="ov"><div><small>★ 4,8</small><span class="pr">$89.000</span></div><button class="plus" data-n="Tabla de la Casa" data-p="89000" aria-label="Agregar Tabla de la Casa">+</button></div></div><h3>Tabla de la Casa</h3><p>Chorizo, costilla, morcilla y arepitas para compartir entre dos.</p></article>
+</div></div></section>
+
+<section class="alt" id="menu"><div class="wrap">
+<div class="lab">LA CARTA</div><h2>Menú completo</h2>
+<div class="tabs" id="tabs" role="group" aria-label="Categorías"></div>
+<div class="menu" id="menuList"></div>
+</div></section>
+
+<section id="experiencia"><div class="wrap two">
+<div><div class="lab">EL AMBIENTE</div><h2>Una brasa que se vive, no solo se prueba.</h2>
+<ul class="feats"><li><b>Parrilla a la vista</b><span>Mira cómo se marca cada corte antes de llegar a tu mesa.</span></li><li><b>Cócteles de autor</b><span>Una carta corta, con ahumados y cítricos pensada para la carne.</span></li><li><b>Salón privado</b><span>Celebraciones de hasta 24 personas, con menú a medida.</span></li></ul></div>
+<div class="ph" style="--f:#6b3a24;aspect-ratio:5/4"><div style="position:absolute;left:20px;bottom:20px;z-index:2" class="stat"><b>12+</b><span>CORTES A LA BRASA</span></div></div>
+</div></section>
+
+<section class="alt"><div class="wrap chef">
+<div class="av">MR</div><div class="lab">LA COCINA</div>
+<blockquote>“Cocinar con fuego es un diálogo silencioso entre la temporada y el plato.”</blockquote>
+<small>CHEF MATEO RIVAS</small><small>DIRECTOR CULINARIO</small>
+</div></section>
+
+<section id="voces"><div class="wrap">
+<h2 style="text-align:center">Voces de nuestra mesa</h2>
+<div class="voices">
+<figure>“La Tabla de la Casa es perfecta para compartir. La carne llegó en su punto exacto.”<figcaption><i></i><span>Elena R.<small>Cena en pareja</small></span></figcaption></figure>
+<figure>“Pedimos a domicilio y todo llegó caliente. La hamburguesa Mesa ya es de la casa.”<figcaption><i></i><span>Marcos T.<small>Pedido a domicilio</small></span></figcaption></figure>
+<figure>“Celebramos un cumpleaños en el salón privado y el servicio fue impecable.”<figcaption><i></i><span>Sara C.<small>Celebración familiar</small></span></figcaption></figure>
+</div></div></section>
+
+<section id="reservas"><div class="wrap"><form class="res" id="resForm">
+<h2>Reserva tu mesa</h2>
+<p>Los cupos por noche son limitados. Elige fecha, hora y número de personas, y te confirmamos al instante.</p>
+<div class="bar">
+<input type="text" name="n" placeholder="Tu nombre" aria-label="Nombre" required autocomplete="name">
+<input type="tel" name="t" placeholder="Teléfono" aria-label="Teléfono" required autocomplete="tel">
+<input type="date" name="f" aria-label="Fecha" required>
+<select name="h" aria-label="Hora"><option>12:30</option><option>13:30</option><option>19:00</option><option>20:00</option><option>21:00</option></select>
+<select name="p" aria-label="Personas"><option value="1">1 persona</option><option value="2" selected>2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option><option value="6">6 personas</option><option value="8">8 personas</option></select>
+<button class="btn" type="submit">Confirmar reserva</button></div>
+<div id="resOk" class="ok" hidden role="status"></div>
+</form></div></section>
+
+<section class="alt" id="promos"><div class="wrap">
+<div class="head"><div><div class="lab">DOMICILIOS Y OFERTAS</div><h2>Pide en casa, ahorra en mesa</h2></div><a href="#" id="open2">Ver mi pedido →</a></div>
+<div class="promos">
+<article><h3>10% en tu primer pedido</h3><p>Usa el código <code>BRASA10</code>. Domicilio gratis desde $80.000.</p></article>
+<article><h3>Martes de hamburguesa</h3><p>Segunda hamburguesa a mitad de precio, todo el día.</p></article>
+<article><h3>Cumpleaños con postre</h3><p>Reserva tu celebración y el postre va por la casa.</p></article>
+</div></div></section>
+
+<footer><div class="wrap"><a class="logo" href="#inicio">BRASA <b>&</b> MESA</a><span>Calle 85 # 12-30, Bogotá · 12:00 m. a 11:00 p. m.</span><span>Sitio de demostración, restaurante ficticio.</span></div></footer>
+
+<aside id="drawer" aria-label="Mi pedido">
+<button class="add" id="close" style="float:right">Cerrar</button>
+<h2>Mi pedido</h2>
+<div id="lines"></div>
+<div id="sum" hidden>
+<label>Código promocional<input id="code" placeholder="BRASA10"></label>
+<div class="tot"><span>Subtotal</span><span id="sub"></span></div>
+<div class="tot"><span>Descuento</span><span id="disc"></span></div>
+<div class="tot"><span>Domicilio</span><span id="ship"></span></div>
+<div class="tot" style="font-size:1.2rem"><span>Total</span><span class="price" id="total"></span></div>
+<form id="ordForm"><label>Dirección de entrega<input name="a" required autocomplete="street-address"></label><button class="btn" type="submit" style="width:100%">Confirmar pedido</button></form></div>
+<div id="ordOk" class="ok" hidden role="status"></div>
+</aside>
+
+<script src="js/main.js"></script>
+</body>
+</html>
